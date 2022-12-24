@@ -1,4 +1,12 @@
-# MidFlash
+<h1 align="center"> 🤖 MidFlash </h1>
+<div align="center">
+<img src="https://user-images.githubusercontent.com/55964635/209423757-dc0ee138-37e4-409d-a1f9-2f48c1da904e.png"/>
+ </div>
+
+<br>
+
+
+## Explicacion momentanea 
 
 - `1)` El programa comienza leyendo la ruta de una imagen de entrada y cargándola en memoria.
 - `2)` El programa utiliza una técnica de procesamiento de imagen, como el algoritmo de borde de Canny, para detectar los bordes de la imagen y determinar qué partes de la imagen deben recortarse.
