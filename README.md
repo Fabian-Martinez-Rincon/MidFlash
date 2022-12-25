@@ -6,6 +6,12 @@
 <br>
 
 
+### Instalar dependencias
+
+```cmd
+pip install selenium
+```
+
 ## Explicacion momentanea 
 
 - `1)` El programa comienza leyendo la ruta de una imagen de entrada y cargándola en memoria.
@@ -18,3 +24,24 @@
 ### Links de ayuda
 
 - [Libreria](https://www.selenium.dev/selenium/docs/api/py/)
+- [Link para las Imagenes](https://zyro.com/es/herramientas/upscaler-de-imagenes)
+
+
+```Python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+
+browser = webdriver.Chrome()
+
+browser.get('https://fabianmartinez.vercel.app/')
+assert 'Yahoo' in browser.title
+
+elem = browser.find_element(By.CLASS_NAME, 'chakra-button css-1c8mrgk')  # Find the search box
+#elem.click()
+#elem.send_keys('seleniumhq' + Keys.RETURN)
+
+
+input()
+browser.quit()
+```
