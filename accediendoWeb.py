@@ -1,18 +1,10 @@
-#import requests
-#
-#url = "https://zyro.com/es/herramientas/upscaler-de-imagenes"
-#
-#response = requests.get(url)
-#
-#if response.status_code == 200:
-#    print(response.text)
+from selenium import webdriver
 
-import webbrowser
+# Para usar Chrome:
+driver = webdriver.Chrome()
+driver.get("https://fabianmartinez.vercel.app")
 
-url = "https://zyro.com/es/herramientas/upscaler-de-imagenes"
+input('Presiona "enter" para cerrar el navegador')
 
-webbrowser.open(url)
-
-
-
-
+# Cierra el navegador
+driver.quit()

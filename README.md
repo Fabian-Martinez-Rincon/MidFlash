@@ -14,3 +14,7 @@
 - `4)` El programa utiliza un modelo de inteligencia artificial entrenado para aumentar la resolución de las imágenes para aumentar la resolución de la imagen recortada.
 - `5)` El programa guarda la imagen con la resolución aumentada en una ruta de salida especificada por el usuario.
 - `6)` El programa finaliza y muestra al usuario un mensaje de éxito o un mensaje de error en caso de que haya ocurrido algún problema durante el procesamiento.
+
+### Links de ayuda
+
+- [Libreria](https://www.selenium.dev/selenium/docs/api/py/)
