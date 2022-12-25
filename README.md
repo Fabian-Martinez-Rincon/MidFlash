@@ -6,6 +6,8 @@
 <br>
 
 
+### Version de Selenium 4.7.2
+
 ### Instalar dependencias
 
 ```cmd
@@ -27,21 +29,35 @@ pip install selenium
 - [Link para las Imagenes](https://zyro.com/es/herramientas/upscaler-de-imagenes)
 
 
+### Apretar botones de una web
+
 ```Python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
 
-browser = webdriver.Chrome()
+import time
 
-browser.get('https://fabianmartinez.vercel.app/')
-assert 'Yahoo' in browser.title
+from selenium.webdriver.support.wait import WebDriverWait
 
-elem = browser.find_element(By.CLASS_NAME, 'chakra-button css-1c8mrgk')  # Find the search box
-#elem.click()
-#elem.send_keys('seleniumhq' + Keys.RETURN)
+if __name__ == '__main__':
+    options = webdriver.ChromeOptions()
+    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=options)
 
+    driver.get('https://fabianmartinez.vercel.app/')
 
-input()
-browser.quit()
+    # get all buttons by common class
+    buttons = driver.find_elements(By.CLASS_NAME, 'css-1v7r4tf')
+    #print("Botones" , buttons[0])
+    # wait for first button (buttons[0]) be clickable and click
+    WebDriverWait(driver, 20).until(EC.element_to_be_clickable(buttons[0])).click()
+    #time.sleep(3)
+    
+    input()
+    # clicking in all buttons
+    #for button in buttons:
+    #    WebDriverWait(driver, 20).until(EC.element_to_be_clickable(button)).click()
+    #    time.sleep(3)
+
+    driver.quit()
 ```
