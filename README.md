@@ -31,7 +31,7 @@ pip install selenium
 
 ### Apretar botones de una web
 
-```Python
+```python
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -102,9 +102,10 @@ def cutout(image):
                 )
             )
 
-
+```
 
 # Recorre la lista de cuadrantes y crea una imagen para cada uno
+```python
 try:
     imagenes = [
         imagen for imagen in os.listdir(PATH_SOURCE) 

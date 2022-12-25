@@ -1,4 +1,3 @@
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -11,16 +10,13 @@ if __name__ == '__main__':
     options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=options)
 
-    driver.get('https://zyro.com/es/herramientas/upscaler-de-imagenes')
+    driver.get('https://fabianmartinez.vercel.app/')
 
-
-    buttons = driver.find_elements(By.CLASS_NAME, 'button.medium-up.button--small.button--small-mobile.button--black')
+    # get all buttons by common class
+    buttons = driver.find_elements(By.CLASS_NAME, 'chakra-button.css-1c8mrgk')
+    #print("Botones" , buttons[0])
+    # wait for first button (buttons[0]) be clickable and click
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable(buttons[0])).click()
-    
-    
-    buttons = driver.find_elements(By.CLASS_NAME, 'button.hero__button.button--small.button--small-mobile.button--white')
-    WebDriverWait(driver, 20).until(EC.element_to_be_clickable(buttons[0])).click()
-    
     #time.sleep(3)
     
     input()
