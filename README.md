@@ -8,10 +8,13 @@
 
 ### Version de Selenium 4.7.2
 
+Para que el siguiente codigo funcione de forma 100% correcta, tenes que tener la carpeta de descargas limpia.
+
 ### Instalar dependencias
 
 ```cmd
 pip install selenium
+pip install pyautogui
 ```
 
 ## Explicacion momentanea 
@@ -27,7 +30,7 @@ pip install selenium
 
 - [Libreria](https://www.selenium.dev/selenium/docs/api/py/)
 - [Link para las Imagenes](https://zyro.com/es/herramientas/upscaler-de-imagenes)
-
+- [Web de ayuda](https://selenium-python.readthedocs.io/getting-started.html)
 
 ### Apretar botones de una web
 
