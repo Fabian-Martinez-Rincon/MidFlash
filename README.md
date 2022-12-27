@@ -68,6 +68,7 @@ if not os.path.exists(PATH_PROSSED_RESOLUTION):
 ```
 
 ### Download Wait
+
 ```python
 def download_wait(path_to_downloads):
     seconds = 0
@@ -144,6 +145,7 @@ Recorta la imagen en 4 cuadrantes
 
 ---
 ## first_image y proced_image
+
 ```python
 def first_image(image):
     push_button(BUTTON_COOKIES)
@@ -170,6 +172,7 @@ def proced_image(image):
 Como la pagina tiene distintos botones dependiendo de la acción, al principio era distinto automatizar las resoluciones, pero despues de la primera imagen, todas las demas eran con la misma operación, es por eso que hice dos modulos separados
 
 ## El programa principal
+
 ```python
 try:
     imagenes = [
