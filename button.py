@@ -42,8 +42,7 @@ IMAGE = 'C:\\Users\\fabian\\Desktop\\Imagenes\\Midjourney\\Recortadas\\Elegidas\
 PATH_DOWNLOAD = "C:\\Users\\fabian\\Downloads"
 
 if __name__ == '__main__':
-    options = webdriver.ChromeOptions()
-    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=options)
+    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=webdriver.ChromeOptions())
     driver.get(WEB)
 
     #Setup
