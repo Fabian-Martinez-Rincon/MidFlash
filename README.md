@@ -6,6 +6,10 @@
 <br>
 
 
+https://user-images.githubusercontent.com/55964635/209597182-7f8bcd9d-b126-421d-bae4-67081afc7165.mp4
+
+
+
 ### Version de Selenium 4.7.2
 
 Para que el siguiente codigo funcione de forma 100% correcta, tenes que tener la carpeta de descargas limpia.
